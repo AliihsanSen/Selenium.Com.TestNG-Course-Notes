@@ -1,14 +1,13 @@
-package tests.Day01;
+package tests.Day01_IlkTestTestNG;
 
 import Utilities.TestBaseBeforeClassAfterClass;
-import Utilities.TestBaseBeforeMethodAfterMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class C04_DependsOfMethod extends TestBaseBeforeClassAfterClass {
+public class C04_DependsOnMethod extends TestBaseBeforeClassAfterClass {
 
     @Test
     public void test1() {

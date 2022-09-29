@@ -1,4 +1,4 @@
-package tests.Day01;
+package tests.Day01_IlkTestTestNG;
 
 import Utilities.TestBaseBeforeMethodAfterMethod;
 import org.testng.annotations.Test;
