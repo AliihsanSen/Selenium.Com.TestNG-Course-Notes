@@ -1,4 +1,4 @@
-package tests.Day02_SoftAssert;
+package Tests.Day02_SoftAssert;
 
 import Utilities.TestBaseBeforeClassAfterClass;
 import org.testng.annotations.Test;
