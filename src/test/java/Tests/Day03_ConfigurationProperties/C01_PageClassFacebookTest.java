@@ -1,14 +1,10 @@
-package Tests.Day03_;
+package Tests.Day03_ConfigurationProperties;
 
 import Pages.FacebookPage;
 import Utilities.Driver;
 import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
