@@ -43,5 +43,6 @@ public class Q01_TestNG {
       * javadan öğrenmis olduğumuz oop concept selenium ile page object model de birlesitirilmis oluyuor
       *
       */
+
     }
 }
