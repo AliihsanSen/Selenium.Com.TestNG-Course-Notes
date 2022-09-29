@@ -15,5 +15,7 @@ public class C02_ConfigurationProperties {
 
         String urlFace = ConfigReader.getProperties("faceUrl");
         Driver.getDriver().get(urlFace);
+
+        Driver.closeDriver();
     }
 }
