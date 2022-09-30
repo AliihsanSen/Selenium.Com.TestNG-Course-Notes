@@ -32,7 +32,7 @@ public class C03_ConfigReader {
         hotelPages.password.sendKeys("Manager1!");
         hotelPages.loginButton.click();
 
-        // Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
+        // Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et.
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(hotelPages.girisEkrani.isDisplayed());
     }
