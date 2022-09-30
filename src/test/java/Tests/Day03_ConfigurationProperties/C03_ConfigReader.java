@@ -20,6 +20,11 @@ public class C03_ConfigReader {
 
         // login butonuna bas
         HotelPages hotelPages = new HotelPages();
+        /*
+        Page Class'ındaki locate'lerimize ulaşabilmek için Page classımızdan bir obje
+        oluşturara, oluşturmuş olduğumuz obje ile page class'ımızdaki locate'leriimize
+        ulaşabiliriz.
+         */
         hotelPages.login.click();
 
         // test data username: manager ,  test data password : Manager1!
