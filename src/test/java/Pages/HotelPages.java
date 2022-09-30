@@ -25,6 +25,6 @@ public class HotelPages {
     public WebElement loginButton;
 
     @FindBy (xpath = "(//*[text()='ListOfUsers'])[2]")
-    public WebElement girişEkranı;
+    public WebElement girisEkrani;
 
 }

@@ -27,6 +27,6 @@ public class C03_ConfigReader {
 
         // Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(hotelPages.girişEkranı.isDisplayed());
+        softAssert.assertTrue(hotelPages.girisEkrani.isDisplayed());
     }
 }
