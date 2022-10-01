@@ -9,25 +9,37 @@ public class HmcPage {
 
     public HmcPage() {
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy (xpath = "//*[text()='Log in']")
+    @FindBy(xpath = "//*[text()='Log in']")
     public WebElement login;
 
-    @FindBy ( xpath = "//input[@id='UserName']")
+    @FindBy(xpath = "//input[@id='UserName']")
     public WebElement userName;
 
-    @FindBy (xpath = "//input[@id='Password']")
+    @FindBy(xpath = "//input[@id='Password']")
     public WebElement password;
 
-    @FindBy (xpath = "//input[@id='btnSubmit']")
+    @FindBy(xpath = "//input[@id='btnSubmit']")
     public WebElement loginButton;
 
-    @FindBy (xpath = "(//*[text()='ListOfUsers'])[2]")
+    @FindBy(xpath = "(//*[text()='ListOfUsers'])[2]")
     public WebElement girisEkrani;
 
-    @FindBy (xpath = "//*[text()='Username or password is incorrect, please correct them and try again']")
+    @FindBy(xpath = "//*[text()='Username or password is incorrect, please correct them and try again']")
     public WebElement girisYapilamadi;
+
+    @FindBy(xpath = "//*[text()='Hotel Management']")
+    public WebElement hotelManagament;
+
+    @FindBy(xpath = "(//i[@class='icon-calendar'])[4]")
+    public WebElement roomReservations;
+
+    @FindBy(xpath = "//*[text()='Add Room Reservation ']")
+    public WebElement addRoomReservation;
+
+    @FindBy(xpath = "//select[@id='IDUser']")
+    public WebElement ıdUser;
 
 }
