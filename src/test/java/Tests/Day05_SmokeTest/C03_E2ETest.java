@@ -7,6 +7,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class C03_E2ETest {
 
@@ -35,24 +36,30 @@ public class C03_E2ETest {
         hmcPage.addRoomReservation.click();
 
         // Açılan sayfadaki tüm metin kutularına istediğiniz verileri girin.
-        hmcPage.ıdUser.sendKeys("manager");
-        actions.sendKeys(Keys.TAB)
-                .sendKeys("Happy Hotel",Keys.TAB)
-                .sendKeys("1500",Keys.TAB)
-                .sendKeys("10/02/2022",Keys.TAB).sendKeys(Keys.TAB)
-                .sendKeys("10/13/2022",Keys.TAB).sendKeys(Keys.TAB)
-                .sendKeys("2",Keys.TAB).sendKeys("2",Keys.TAB)
-                .sendKeys(faker.name().fullName(),Keys.TAB)
-                .sendKeys(faker.phoneNumber().cellPhone(),Keys.TAB)
-                .sendKeys(faker.internet().emailAddress(),Keys.TAB)
-                .sendKeys("güzel günleer",Keys.TAB).sendKeys(Keys.SPACE)
-                .sendKeys(Keys.TAB)
-
         // Save butonuna tıklayın.
+        hmcPage.idUser.sendKeys("manager");
+        actions.sendKeys(Keys.TAB)
+                .sendKeys("Happy Hotel", Keys.TAB)
+                .sendKeys("1500", Keys.TAB)
+                .sendKeys("10/02/2022", Keys.TAB).sendKeys(Keys.TAB)
+                .sendKeys("10/13/2022", Keys.TAB).sendKeys(Keys.TAB)
+                .sendKeys("2", Keys.TAB).sendKeys("2", Keys.TAB)
+                .sendKeys(faker.name().fullName(), Keys.TAB)
+                .sendKeys(faker.phoneNumber().cellPhone(), Keys.TAB)
+                .sendKeys(faker.internet().emailAddress(), Keys.TAB)
+                .sendKeys("güzel günleer", Keys.TAB).sendKeys(Keys.SPACE)
+                .sendKeys(Keys.TAB).sendKeys(Keys.TAB)
+                .sendKeys(Keys.ENTER).perform();
 
         // “RoomReservation was inserted successfully” textinin göründüğünü test edin.
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(hmcPage.roomReservationsText.isDisplayed());
 
         // OK butonuna tıklayın.
+        hmcPage.okButton.click();
+
+        // Sayfayı kapatınız.
+        Driver.quitDriver();
 
     }
 }

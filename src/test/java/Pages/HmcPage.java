@@ -40,6 +40,11 @@ public class HmcPage {
     public WebElement addRoomReservation;
 
     @FindBy(xpath = "//select[@id='IDUser']")
-    public WebElement ıdUser;
+    public WebElement idUser;
 
+    @FindBy(xpath = "//*[text()='RoomReservation was inserted successfully']")
+    public WebElement roomReservationsText;
+
+    @FindBy(xpath = "//*[text()='OK']")
+    public WebElement okButton;
 }
