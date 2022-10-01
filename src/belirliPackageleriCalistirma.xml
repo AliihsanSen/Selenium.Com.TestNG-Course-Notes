@@ -4,7 +4,6 @@
     <test name="packageler">
         <packages>
             <package name="Tests.Day03_ConfigurationProperties"/>
-
         </packages>
     </test>
     <test name="baska Test">
