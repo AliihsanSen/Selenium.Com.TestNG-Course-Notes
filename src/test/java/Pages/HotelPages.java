@@ -27,4 +27,7 @@ public class HotelPages {
     @FindBy (xpath = "(//*[text()='ListOfUsers'])[2]")
     public WebElement girisEkrani;
 
+    @FindBy (xpath = "//*[text()='Username or password is incorrect, please correct them and try again']")
+    public WebElement girisYapilamadi;
+
 }
