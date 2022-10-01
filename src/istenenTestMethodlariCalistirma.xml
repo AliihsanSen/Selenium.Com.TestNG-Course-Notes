@@ -8,6 +8,11 @@
                     <include name="bestbuyTesti"/>
                 </methods>
             </class>
+            <class name="Tests.Day01_IlkTestTestNG.C03_Priority">
+                <methods>
+                    <exclude name="amazonTesti"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
