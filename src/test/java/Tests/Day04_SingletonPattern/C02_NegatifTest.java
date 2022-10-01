@@ -1,9 +1,8 @@
 package Tests.Day04_SingletonPattern;
 
-import Pages.HotelPages;
+import Pages.HmcPage;
 import Utilities.ConfigReader;
 import Utilities.Driver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -15,7 +14,7 @@ public class C02_NegatifTest {
         // https://www.hotelmycamp.com/ adresine git
         String url = ConfigReader.getProperties("hotelUrl");
         Driver.getDriver().get(url);
-        HotelPages hotelPages = new HotelPages();
+        HmcPage hotelPages = new HmcPage();
 
         // login butonuna bas
         hotelPages.login.click();

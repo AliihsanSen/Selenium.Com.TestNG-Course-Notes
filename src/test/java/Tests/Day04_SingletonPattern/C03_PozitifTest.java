@@ -1,6 +1,6 @@
 package Tests.Day04_SingletonPattern;
 
-import Pages.HotelPages;
+import Pages.HmcPage;
 import Utilities.ConfigReader;
 import Utilities.Driver;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ public class C03_PozitifTest {
         Driver.getDriver().get(url);
 
         // login butonuna bas
-        HotelPages hotelPages = new HotelPages();
+        HmcPage hotelPages = new HmcPage();
         /*
         Page Class'ındaki locate'lerimize ulaşabilmek için Page classımızdan bir obje
         oluşturara, oluşturmuş olduğumuz obje ile page class'ımızdaki locate'leriimize

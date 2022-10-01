@@ -1,10 +1,8 @@
 package Tests.Day03_ConfigurationProperties;
 
-import Pages.HotelPages;
+import Pages.HmcPage;
 import Utilities.ConfigReader;
 import Utilities.Driver;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -19,7 +17,7 @@ public class C03_ConfigReader {
         Driver.getDriver().get(url);
 
         // login butonuna bas
-        HotelPages hotelPages = new HotelPages();
+        HmcPage hotelPages = new HmcPage();
         /*
         Page Class'ındaki locate'lerimize ulaşabilmek için Page classımızdan bir obje
         oluşturara, oluşturmuş olduğumuz obje ile page class'ımızdaki locate'leriimize

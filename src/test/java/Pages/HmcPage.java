@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HotelPages {
+public class HmcPage {
 
-    public HotelPages() {
+    public HmcPage() {
 
         PageFactory.initElements(Driver.getDriver(),this);
     }
