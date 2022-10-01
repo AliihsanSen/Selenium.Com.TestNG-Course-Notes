@@ -14,7 +14,8 @@ içinde hangi class'ın yada test methodunun çalışmasını hangisinin çalı�
 <suite name="istenen class'lari calistirma">
     <test name="classlar">
         <classes>
-            <class name="Tests.Day01_IlkTestTestNG.C03_Priority"></class>
+            <class name="Tests.Day01_IlkTestTestNG.C03_Priority"/>
+            <class name="Tests.Day02_SoftAssert.C03_SoftAssert"/>
         </classes>
     </test>
 </suite>
