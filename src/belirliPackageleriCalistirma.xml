@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen package'leri calistirma">
+    <test name="packageler">
+        <packages>
+            <package name="Tests.Day03_ConfigurationProperties"></package>
+        </packages>
+    </test>
+</suite>
