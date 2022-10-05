@@ -10,3 +10,7 @@
         </packages>
     </test>
 </suite>
+        <!--TestNG de .xml file ile parallel test yapmak istersek suite
+            tag'ından sonra parallel tag'ı ile
+            kaç browser'da çalıştırmak istersek thread-count takını kullanırız.
+         -->
