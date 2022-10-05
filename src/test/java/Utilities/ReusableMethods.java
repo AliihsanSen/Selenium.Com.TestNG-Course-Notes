@@ -21,7 +21,7 @@ import java.util.function.Function;
 
 public class ReusableMethods {
 
-    //========ScreenShot(Sayfanın resmini alma)=====//
+    /**========ScreenShot(Sayfanın resmini alma)=====*/
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -36,7 +36,7 @@ public class ReusableMethods {
         return target;
     }
 
-    //========ScreenShot Web Element(Bir webelementin resmini alma)=====//
+    /**========ScreenShot Web Element(Bir webelementin resmini alma)=====*/
     public static String getScreenshotWebElement(String name, WebElement element) throws IOException {
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         // TakesScreenshot is an interface of selenium that takes the screenshot
@@ -49,7 +49,7 @@ public class ReusableMethods {
         return wElementSS;
     }
 
-    //========Switching Window(Pencereler arası geçiş)=====//
+    /**========Switching Window(Pencereler arası geçiş)=====*/
     public static void switchToWindow(String targetTitle) {
         String origin = Driver.getDriver().getWindowHandle();
         for (String handle : Driver.getDriver().getWindowHandles()) {
@@ -61,13 +61,13 @@ public class ReusableMethods {
         Driver.getDriver().switchTo().window(origin);
     }
 
-    //========Hover Over(Elementin üzerinde beklemek)=====//
+    /**========Hover Over(Elementin üzerinde beklemek)=====*/
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
     }
 
-    //==========Return a list of string given a list of Web Element====//
+    /**==========Return a list of string given a list of Web Element====*/
     public static List<String> getElementsText(List<WebElement> list) {
         List<String> elemTexts = new ArrayList<>();
         for (WebElement el : list) {
@@ -78,7 +78,7 @@ public class ReusableMethods {
         return elemTexts;
     }
 
-    //========Returns the Text of the element given an element locator==//
+    /**========Returns the Text of the element given an element locator==*/
     public static List<String> getElementsText(By locator) {
         List<WebElement> elems = Driver.getDriver().findElements(locator);
         List<String> elemTexts = new ArrayList<>();
@@ -90,8 +90,8 @@ public class ReusableMethods {
         return elemTexts;
     }
 
-    //   HARD WAIT WITH THREAD.SLEEP
-    //   waitFor(5);  => waits for 5 second
+    /**   HARD WAIT WITH THREAD.SLEEP
+       waitFor(5);  => waits for 5 second*/
     public static void waitFor(int sec) {
         try {
             Thread.sleep(sec * 1000);
@@ -100,7 +100,7 @@ public class ReusableMethods {
         }
     }
 
-    //===============Explicit Wait==============//
+    /**===============Explicit Wait==============*/
     public static WebElement waitForVisibility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOf(element));
