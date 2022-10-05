@@ -29,7 +29,7 @@ public class C03_Priority extends TestBaseBeforeMethodAfterMethod {
         driver.quit();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "gp1")
     public void amazonTesti() {
 
         driver.get("https://amazon.com");

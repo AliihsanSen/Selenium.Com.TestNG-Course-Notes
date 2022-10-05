@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 public class C03_ConfigReader {
 
-    @Test
+    @Test (groups = "gp2")
     public void test() {
 
 

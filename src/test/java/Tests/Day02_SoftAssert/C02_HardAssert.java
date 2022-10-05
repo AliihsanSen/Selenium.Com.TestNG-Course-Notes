@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class C02_HardAssert extends TestBaseBeforeClassAfterClass {
 
-    @Test
+    @Test(groups = "gp1")
     public void test01() {
 
         // 1-amazon anasayfaya gidin
