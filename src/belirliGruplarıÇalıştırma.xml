@@ -21,4 +21,14 @@
             <package name="Tests.Day02_SoftAssert"/>
         </packages>
     </test>
+    <test name="Belirli Gruplar 2">
+        <groups>
+            <run>
+                <exclude name="gp2"/> <!-- gp2 olarak isimlendirdiğimiz dışındaki tüm methodlar çalışır  -->
+           </run>
+        </groups>
+        <packages>
+            <package name="Tests.Day03_ConfigurationProperties"/>
+        </packages>
+    </test>
 </suite>

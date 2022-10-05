@@ -41,7 +41,7 @@ public class C03_E2ETest {
         actions.sendKeys(Keys.TAB)
                 .sendKeys("Happy Hotel", Keys.TAB)
                 .sendKeys("1500", Keys.TAB)
-                .sendKeys("10/02/2022", Keys.TAB).sendKeys(Keys.TAB)
+                .sendKeys("10/11/2022", Keys.TAB).sendKeys(Keys.TAB)
                 .sendKeys("10/13/2022", Keys.TAB).sendKeys(Keys.TAB)
                 .sendKeys("2", Keys.TAB).sendKeys("2", Keys.TAB)
                 .sendKeys(faker.name().fullName(), Keys.TAB)
