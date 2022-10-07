@@ -1,13 +1,14 @@
 package Tests.Day07_HTMLReports;
 
 import Utilities.TestBaseBeforeClassAfterClass;
+import Utilities.TestBaseCross;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class C03_SoftAssert extends TestBaseBeforeClassAfterClass {
+public class C03_SoftAssert extends TestBaseCross {
 
     @Test
     public void test01() {
