@@ -27,8 +27,8 @@ public class CrossDriver {
 
         if (driver == null) {
             switch (browser){
-                //CrossBrowser için bizim gönderdiğimiz browser üzerinden çalışması için
-                //buraya parametre olarak girdiğimiz değeri yazdık
+                // CrossBrowser için bizim gönderdiğimiz browser üzerinden çalışması için
+                // buraya parametre olarak girdiğimiz değeri yazdık
                 case "edge" :
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
@@ -55,12 +55,14 @@ public class CrossDriver {
         return driver;
     }
     public static void closeDriver() {
+
         if (driver != null) { // driver'a değer atanmışsa kapat
             driver.close();
             driver = null; // Kapandıktan sonra sonraki açmaları garanti altına almak için driver'i tekrar null yaptık
         }
     }
     public static void quitDriver() {
+
         if (driver != null)
             driver.quit();
         driver = null;
