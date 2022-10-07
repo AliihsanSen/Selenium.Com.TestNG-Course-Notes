@@ -17,7 +17,6 @@ public class CrossDriver {
 
     static WebDriver driver;
 
-
     public static WebDriver getDriver(String browser) {
         // Eğer browser'a bir değer atanmamışsa properties dosyasın'daki browser çalışsın
         browser = browser == null ? ConfigReader.getProperties("browser") : browser;
