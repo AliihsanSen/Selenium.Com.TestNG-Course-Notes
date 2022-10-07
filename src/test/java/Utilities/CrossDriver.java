@@ -25,22 +25,22 @@ public class CrossDriver {
         // atamamız gerekir.
 
         if (driver == null) {
-            switch (browser){
+            switch (browser) {
                 // CrossBrowser için bizim gönderdiğimiz browser üzerinden çalışması için
                 // buraya parametre olarak girdiğimiz değeri yazdık
-                case "edge" :
+                case "edge":
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
                     break;
-                case "chrome" :
+                case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
-                case "opera" :
+                case "opera":
                     WebDriverManager.operadriver().setup();
                     driver = new OperaDriver();
                     break;
-                case "headless-chrome" :
+                case "headless-chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
@@ -53,6 +53,7 @@ public class CrossDriver {
         }
         return driver;
     }
+
     public static void closeDriver() {
 
         if (driver != null) { // driver'a değer atanmışsa kapat
@@ -60,6 +61,7 @@ public class CrossDriver {
             driver = null; // Kapandıktan sonra sonraki açmaları garanti altına almak için driver'i tekrar null yaptık
         }
     }
+
     public static void quitDriver() {
 
         if (driver != null)
