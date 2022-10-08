@@ -15,9 +15,12 @@ public class BrcPage {
     @FindBy(xpath = "(//*[@tabindex='0'])[1]")
     public WebElement login;
 
-    @FindBy (xpath = "//*[@id='formBasicEmail']")
+    @FindBy(xpath = "//*[@id='formBasicEmail']")
     public WebElement userEmail;
 
-    @FindBy (xpath = "//*[@id='dropdown-basic-button']")
+    @FindBy(xpath = "//*[@id='dropdown-basic-button']")
     public WebElement basariliGiris;
+
+    @FindBy(xpath = "(//*[text()=' Login'])[2]")
+    public WebElement ikinciLogin;
 }
