@@ -8,7 +8,5 @@ public class Q01_ {
     public void testName() {
 
 
-
-
     }
 }
