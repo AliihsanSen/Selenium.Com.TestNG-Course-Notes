@@ -1,6 +1,8 @@
 package Pages;
 
 import Utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HerokuTestPage {
@@ -18,7 +20,7 @@ public class HerokuTestPage {
     @FindBy (xpath = ("//button[@id='oncontextmenu']"))
     public WebElement contextmenu;
 
-    @FindBy (xpath = ("//button[@id='ondoubleclick']"))
+    @FindBy(xpath = ("//button[@id='ondoubleclick']"))
     public WebElement doubleClick;
 
     @FindBy (xpath = ("//button[@id='onfocus']"))
