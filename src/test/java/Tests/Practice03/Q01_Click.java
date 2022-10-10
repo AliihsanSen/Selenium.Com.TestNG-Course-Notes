@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Q01_ {
+public class Q01_Click {
 
     // Go to https://testpages.herokuapp.com/styled/events/javascript-events.html
     // Click all the buttons and verify they are all clicked
-    
+
     HerokuTestPage herokuTestPage;
-    
+
     Actions actions = new Actions(Driver.getDriver());
 
     @Test
@@ -34,6 +34,7 @@ public class Q01_ {
         herokuTestPage.onblur.click();
         herokuTestPage.onclick.click();
         herokuTestPage.onclick.click();
+
         actions.contextClick(herokuTestPage.contextmenu).
                 doubleClick(herokuTestPage.doubleClick).
                 click(herokuTestPage.onfocus).
@@ -50,7 +51,7 @@ public class Q01_ {
         Thread.sleep(2000);
     }
 
-    @Test (dependsOnMethods = "test01")
+    @Test(dependsOnMethods = "test01")
     public void test02() {
         List<WebElement> clicked = herokuTestPage.eventTriggered;
         Assert.assertEquals(clicked.size(), 11);
