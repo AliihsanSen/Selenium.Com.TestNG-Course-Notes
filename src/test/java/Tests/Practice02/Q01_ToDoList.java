@@ -61,6 +61,5 @@ public class Q01_ToDoList {
         // Tüm yapılacakların silindiğini doğrulayın.
         List<WebElement> newtodos = webUniversityPage.newtodosWebelement;
         Assert.assertEquals(0,newtodos.size());
-
     }
 }
