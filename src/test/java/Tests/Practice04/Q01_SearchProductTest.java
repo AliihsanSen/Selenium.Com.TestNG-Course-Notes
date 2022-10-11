@@ -17,6 +17,7 @@ public class Q01_SearchProductTest extends TestBaseRapor {
 
     @Test
     public void searchProductPage() throws InterruptedException {
+
         extentTest=extentReports.createTest("automationexcercise","Web automation");
 
         // 1. Tarayıcıyı başlat
@@ -49,6 +50,7 @@ public class Q01_SearchProductTest extends TestBaseRapor {
         // 7. 'ARARAN ÜRÜNLER'in görünür olduğunu doğrulayın
         Assert.assertTrue(searchProductPage.searchedProductTitle.isDisplayed());
         List<WebElement> ürünlistesi = searchProductPage.searchedProductList;
+
         /*
         for (WebElement w:ürünlistesi) {
             Assert.assertTrue(w.isDisplayed());
