@@ -63,6 +63,4 @@ public class Q01_SearchProductTest extends TestBaseRapor {
         actions.click(searchProductPage.viewProduct).perform();
         Assert.assertTrue(searchProductPage.blueTop.isDisplayed());
     }
-
-
 }
