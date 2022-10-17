@@ -10,6 +10,7 @@ public class C01_Log4JTest01 {
 
     @Test
     public void log4jTest1() {
+
         logger.info("LOG INFO");
         logger.debug("LOG DEBUG");
         logger.error("LOG ERROR");
