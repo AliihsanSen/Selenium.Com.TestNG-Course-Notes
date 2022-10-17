@@ -17,9 +17,11 @@
     </Appenders>
     <Loggers>
         <!-- Bu kisim ROOT LEVEL'DAKI VARSAYILAN AYARLARI OVERRIDE ETMEK / GUNCELLEMEK /
-         CUSTOMIZE ICIN KULLANIRIZ.-->
+         CUSTOMIZE ICIN KULLANIRIZ.
+         Bu ornekte, ilk logger ayari sadece Tests.Day09_Log4J.C02_Log4JTest02 icin.
+         -->
 
-        <Logger name="com.myfirstproject.tests" level="trace" additivity="false">
+        <Logger name="Tests.Day09_Log4J.C02_Log4JTest02" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="file"/>
         </Logger>
