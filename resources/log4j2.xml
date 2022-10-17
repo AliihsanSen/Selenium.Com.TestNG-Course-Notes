@@ -16,6 +16,9 @@
         </Console>
     </Appenders>
     <Loggers>
+        <!-- Bu kisim ROOT LEVEL'DAKI VARSAYILAN AYARLARI OVERRIDE ETMEK / GUNCELLEMEK /
+         CUSTOMIZE ICIN KULLANIRIZ.-->
+
         <Logger name="com.myfirstproject.tests" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="file"/>
