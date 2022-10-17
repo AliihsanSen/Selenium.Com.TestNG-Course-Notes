@@ -15,7 +15,9 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class C01_ScreenShotReusableMethod {
+public class C03_ScreenshotLog4J {
+
+    private static Logger logger = LogManager.getLogger(C03_ScreenshotLog4J.class.getName());
 
     @Test
     public void testName() throws IOException {
