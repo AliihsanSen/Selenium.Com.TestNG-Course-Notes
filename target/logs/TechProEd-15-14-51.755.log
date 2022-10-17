@@ -1,0 +1,5 @@
+2022-10-17 15:14:51,755 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3015db78
+2022-10-17 15:14:51,757 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@515ebef3
+2022-10-17 15:14:51,771 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 24
+2022-10-17 15:14:51,771 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 24
+2022-10-17 15:14:51,771 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192

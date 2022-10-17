@@ -22,14 +22,17 @@ public class C03_ScreenshotLog4J {
     @Test
     public void testName() throws IOException {
 
+        logger.info("HepsiBurada Sistemine gidilir.");
 
         // Hepsiburada sayfasına gidiniz
         Driver.getDriver().get("https://hepsiburada.com");
 
         // Ve sayfanın resmini alınız
+        logger.info("Ekran görüntüsü alabilir.");
         ReusableMethods.getScreenshot("hepsiburada");
 
         // Sayfayı kapatınız.
+        logger.warn("Driver Kapatabilir.");
         Driver.quitDriver();
     }
 

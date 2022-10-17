@@ -1,0 +1,5 @@
+2022-10-17 15:14:51,710 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 24
+2022-10-17 15:14:51,725 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2022-10-17 15:14:51,725 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-10-17 15:14:51,732 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@141e879d
+2022-10-17 15:14:51,733 TRACE i.n.c.n.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@15fb7a32
