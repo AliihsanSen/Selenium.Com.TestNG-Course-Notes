@@ -1,0 +1,4 @@
+2022-10-17 15:16:18,231 INFO T.D.C03_ScreenshotLog4J [main] HepsiBurada Sistemine gidilir.
+2022-10-17 15:16:23,337 INFO T.D.C03_ScreenshotLog4J [main] Ekran görüntüsü alabilir.
+2022-10-17 15:16:23,527 WARN T.D.C03_ScreenshotLog4J [main] Driver Kapatabilir.
+2022-10-17 15:16:23,530 TRACE i.n.h.c.h.w.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
