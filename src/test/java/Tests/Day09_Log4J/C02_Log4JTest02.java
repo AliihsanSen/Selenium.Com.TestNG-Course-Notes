@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class C02_Log4JTest02 {
 
-    private static Logger logger = LogManager.getLogger(C01_Log4JTest01.class.getName());
+    private static Logger logger = LogManager.getLogger(C02_Log4JTest02.class.getName());
 
     @Test
     public void log4jTest1() {
