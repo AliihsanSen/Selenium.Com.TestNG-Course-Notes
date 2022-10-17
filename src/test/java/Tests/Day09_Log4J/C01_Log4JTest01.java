@@ -15,5 +15,6 @@ public class C01_Log4JTest01 {
         logger.debug("LOG DEBUG");
         logger.error("LOG ERROR");
         logger.fatal("LOG FATAL");
+        logger.warn("LOG WARN");
     }
 }
