@@ -48,5 +48,8 @@ public class C03_ScreenshotLog4J {
 
         // Arama sonuc yazısı Webelementinin resmini alınız
         ReusableMethods.getScreenshotWebElement("AramaSonucWE", amznPage.aramaSonucWE);
+
+
+
     }
 }
