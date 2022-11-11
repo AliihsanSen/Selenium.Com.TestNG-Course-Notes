@@ -18,7 +18,7 @@ public class SeleniumGrid2 {
     @Test
     public void testName() throws InterruptedException, MalformedURLException {
 
-        driver = new RemoteWebDriver(new URL("http://192.168.1.4:4444"),new FirefoxOptions());
+        driver = new RemoteWebDriver(new URL("http://192.168.1.4:4444"),new EdgeOptions());
 
         driver.get("https://www.bluerentalcars.com/");
         Thread.sleep(3000);
