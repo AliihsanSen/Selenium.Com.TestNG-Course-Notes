@@ -2,8 +2,8 @@
 <suite name="Parallel Cross Browser Test" parallel="classes" thread-count="2" verbose="1">
     <test name="Parallel test 2">
         <classes>
-            <class name="Tests.Day05_SmokeTest.SeleniumGrid1"/>
-            <class name="Tests.Day05_SmokeTest.SeleniumGrid2"/>
+            <class name="Tests.Day05_SmokeTest.SeleniumGridChrome"/>
+            <class name="Tests.Day05_SmokeTest.SeleniumGridEdge"/>
         </classes>
     </test>
 </suite>

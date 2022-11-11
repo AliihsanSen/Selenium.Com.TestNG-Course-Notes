@@ -1,0 +1,4 @@
+2022-11-12 00:18:09,370 DEBUG i.n.u.i.PlatformDependent0 [TestNG-test=Parallel test 2-1] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2022-11-12 00:18:09,373 DEBUG i.n.u.i.PlatformDependent [TestNG-test=Parallel test 2-1] sun.misc.Unsafe: available
+2022-11-12 00:18:09,374 DEBUG i.n.u.i.PlatformDependent [TestNG-test=Parallel test 2-1] maxDirectMemory: 4238344192 bytes (maybe)
+2022-11-12 00:18:09,374 DEBUG i.n.u.i.PlatformDependent [TestNG-test=Parallel test 2-1] -Dio.netty.tmpdir: C:\Users\USER\AppData\Local\Temp (java.io.tmpdir)
