@@ -1,0 +1,6 @@
+2022-11-02 01:00:45,652 DEBUG i.n.u.i.PlatformDependent [main] Platform: Windows
+2022-11-02 01:00:45,653 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2022-11-02 01:00:45,653 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-11-02 01:00:45,654 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2022-11-02 01:00:45,654 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2022-11-02 01:00:45,659 DEBUG i.n.u.i.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available

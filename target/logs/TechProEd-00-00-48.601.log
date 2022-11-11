@@ -1,0 +1,5 @@
+2022-11-12 00:00:48,600 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-11-12 00:00:48,602 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-11-12 00:00:48,602 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: true
+2022-11-12 00:00:48,602 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-11-12 00:00:48,612 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled

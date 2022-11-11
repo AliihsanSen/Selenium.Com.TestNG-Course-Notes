@@ -1,0 +1,4 @@
+2022-11-12 00:01:42,567 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2022-11-12 00:01:42,568 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2022-11-12 00:01:42,569 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2022-11-12 00:01:43,638 DEBUG i.n.h.c.c.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
