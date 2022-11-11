@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Parallel Cross Browser Test" parallel="classes" thread-count="2" verbose="1">
+<suite name="Parallel Cross Browser Test" parallel="classes" thread-count="3" verbose="1">
     <test name="Parallel test 2">
         <classes>
             <class name="Tests.Day05_SmokeTest.SeleniumGridChrome"/>
             <class name="Tests.Day05_SmokeTest.SeleniumGridEdge"/>
+            <class name="Tests.Day05_SmokeTest.SeleniumGridFirefox"/>
         </classes>
     </test>
 </suite>
